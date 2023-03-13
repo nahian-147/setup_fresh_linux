@@ -52,7 +52,25 @@
         "pymongo",
         "nbconvert"
     ],
-    "softwares" : [
-        "pandoc","texlive-xetex texlive-fonts-recommended"
+    "apt_softwares" : [
+        "python3-pip","pandoc","texlive-xetex texlive-fonts-recommended",
+        "figlet toilet gcc g++ git vim tilda curl ipmiutil",
+        "mysql-server"
+    ],
+    "snap_softwares" : [
+        "code --classic",
+        "okular",
+        "eclipse --classic",
+        "netbeans --classic",
+        "tree",
+        "postman",
+        "vlc",
+        "dbeaver-ce",
+        "spotify",
+        "gitkraken --classic",
+        "octave",
+        "gradle --classic",
+        "beekeeper-studio",
+        "intellij-idea-community --classic"
     ]
 }
