@@ -50,7 +50,13 @@
         "pytest-postgresql",
         "dnspython",
         "pymongo",
-        "nbconvert"
+        "nbconvert",
+        "pytest",
+        "pytest-html",
+        "selenium",
+        "celery",
+        "flask",
+        "dash"
     ],
     "apt_softwares" : [
         "python3-pip","pandoc","texlive-xetex texlive-fonts-recommended",
@@ -62,6 +68,7 @@
         "okular",
         "eclipse --classic",
         "netbeans --classic",
+        "pycharm-community --classic",
         "tree",
         "postman",
         "vlc",
