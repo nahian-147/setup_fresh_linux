@@ -67,7 +67,8 @@
         "libmysqlclient-dev",
 	    "cmake",
         "postgresql postgresql-contrib",
-        "gnupg"
+        "gnupg",
+        "prospect-mail"
     ],
     "snap_softwares" : [
         "code --classic",
