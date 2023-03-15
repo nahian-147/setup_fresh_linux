@@ -3,7 +3,7 @@ import json
 
 to_be_installed = dict()
 
-with open('install_python_packages.json') as file:
+with open('softwares.json') as file:
     to_be_installed = json.load(file)
 
 for package in to_be_installed['package_list']:

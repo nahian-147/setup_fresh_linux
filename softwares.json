@@ -44,14 +44,16 @@
         "PySpice",
         "pyinstaller",
         "mysql-connector-python",
+        "pymysql",
         "cx-Oracle",
-        "pymssql",
+        "mysqlclient",
         "postgres",
         "pytest-postgresql",
         "dnspython",
         "pymongo",
         "nbconvert",
         "pytest",
+        "pytest-django",
         "pytest-html",
         "selenium",
         "celery",
@@ -61,7 +63,11 @@
     "apt_softwares" : [
         "python3-pip","pandoc","texlive-xetex texlive-fonts-recommended",
         "figlet toilet gcc g++ git vim tilda curl ipmiutil",
-        "mysql-server"
+        "mysql-server",
+        "libmysqlclient-dev",
+	    "cmake",
+        "postgresql postgresql-contrib",
+        "gnupg"
     ],
     "snap_softwares" : [
         "code --classic",
@@ -79,5 +85,13 @@
         "gradle --classic",
         "beekeeper-studio",
         "intellij-idea-community --classic"
+    ],
+    "mongodb" : [
+        "sudo apt -y install libssl1.1",
+        "wget -qO - https://www.mongodb.org/static/pgp/server-5.0.asc | sudo apt-key add -",
+        "echo \"deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/5.0 multiverse\" | sudo tee /etc/apt/sources.list.d/mongodb-org-5.0.list",
+        "sudo apt update",
+        "sudo apt install -y mongodb-org",
+        "sudo systemctl enable mongod"
     ]
 }
