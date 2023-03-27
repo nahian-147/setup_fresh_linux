@@ -31,8 +31,10 @@
         "torch torchvision",
         "tensorflow",
         "sklearn",
+        "scikit-learn",
         "scikit-image",
         "biopython",
+        "scikit-bio",
         "pyquran",
         "mpmath",
         "periodictable",
@@ -63,12 +65,11 @@
     "apt_softwares" : [
         "python3-pip","pandoc","texlive-xetex texlive-fonts-recommended",
         "figlet toilet gcc g++ git vim tilda curl ipmiutil",
-        "mysql-server",
-        "libmysqlclient-dev",
-	    "cmake",
+        "mysql-server","libmysqlclient-dev",
+        "cmake",
         "postgresql postgresql-contrib",
         "gnupg",
-        "prospect-mail"
+        "thonny"
     ],
     "snap_softwares" : [
         "code --classic",
@@ -79,6 +80,7 @@
         "tree",
         "postman",
         "vlc",
+        "prospect-mail",
         "dbeaver-ce",
         "spotify",
         "gitkraken --classic",
@@ -88,11 +90,19 @@
         "intellij-idea-community --classic"
     ],
     "mongodb" : [
+    	"wget http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2_amd64.deb",
+    	"sudo dpkg -i libssl1.1_1.1.1f-1ubuntu2_amd64.deb",
         "sudo apt -y install libssl1.1",
         "wget -qO - https://www.mongodb.org/static/pgp/server-5.0.asc | sudo apt-key add -",
         "echo \"deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/5.0 multiverse\" | sudo tee /etc/apt/sources.list.d/mongodb-org-5.0.list",
         "sudo apt update",
         "sudo apt install -y mongodb-org",
         "sudo systemctl enable mongod"
+    ],
+    "gnome_tweak_tool" : [
+    	"sudo apt update",
+    	"sudo add-apt-repository universe",
+    	"sudo apt install gnome-tweaks -y",
+    	"sudo apt install gnome-shell-extensions -y"
     ]
 }
