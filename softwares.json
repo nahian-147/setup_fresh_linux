@@ -74,7 +74,8 @@
         "postgresql postgresql-contrib",
         "gnupg",
         "thonny",
-        "net-tools"
+        "net-tools",
+        "snapd"
     ],
     "snap_softwares" : [
         "code --classic",
