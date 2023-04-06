@@ -54,13 +54,16 @@
         "dnspython",
         "pymongo",
         "nbconvert",
+        "bs4",
+        "scrapy",
         "pytest",
         "pytest-django",
         "pytest-html",
         "selenium",
         "celery",
         "flask",
-        "dash"
+        "dash",
+        "pvpn"
     ],
     "apt_softwares" : [
         "python3-pip","pandoc","texlive-xetex texlive-fonts-recommended",
@@ -69,7 +72,8 @@
         "cmake",
         "postgresql postgresql-contrib",
         "gnupg",
-        "thonny"
+        "thonny",
+        "net-tools"
     ],
     "snap_softwares" : [
         "code --classic",

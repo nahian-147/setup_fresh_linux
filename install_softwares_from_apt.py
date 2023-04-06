@@ -15,5 +15,3 @@ for software in to_be_installed['apt_softwares']:
 for command in to_be_installed["mongodb"]:
     os.system(command)
     
-for command in to_be_installed["gnome_tweak_tool"]:
-    os.system(command)
