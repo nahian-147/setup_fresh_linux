@@ -9,5 +9,5 @@ os.system('sudo apt upgrade -y')
 with open('softwares.json') as file:
     to_be_installed = json.load(file)
     
-for command in to_be_installed["vscode_apt"]:
+for command in to_be_installed["brave_browser"]:
     os.system(command)
