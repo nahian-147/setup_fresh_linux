@@ -30,7 +30,6 @@
         "shapely",
         "torch torchvision",
         "tensorflow",
-        "sklearn",
         "scikit-learn",
         "scikit-image",
         "biopython",
@@ -63,7 +62,28 @@
         "celery",
         "flask",
         "dash",
-        "pvpn"
+        "pvpn",
+        "progress",
+        "aiohttp",
+        "aiosignal",
+        "async-timeout",
+        "attrs",
+        "certifi",
+        "charset-normalizer",
+        "colorama",
+        "frozenlist",
+        "idna",
+        "multidict",
+        "openai",
+        "python-dateutil",
+        "pytz",
+        "requests",
+        "six",
+        "tqdm",
+        "tzdata",
+        "urllib3",
+        "yarl",
+        "-U sentence-transformers"
     ],
     "apt_softwares" : [
         "python3-pip","pandoc","texlive-xetex texlive-fonts-recommended",
@@ -75,9 +95,13 @@
         "gnupg",
         "thonny",
         "net-tools",
+        "wirreshark nmap ettercap-text-only",
         "snapd",
+        "openssh-server",
         "ncal",
-        "tree"
+        "tree",
+        "arduino",
+        "libxcb-randr0-dev libxcb-xtest0-dev libxcb-xinerama0-dev libxcb-shape0-dev libxcb-xkb-dev"
     ],
     "snap_softwares" : [
         "code --classic",
@@ -95,7 +119,8 @@
         "octave",
         "gradle --classic",
         "beekeeper-studio",
-        "intellij-idea-community --classic"
+        "intellij-idea-community --classic",
+        "android-studio --classic"
     ],
     "mongodb" : [
     	"wget http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2_amd64.deb",
@@ -126,6 +151,20 @@
     	"sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg",
     	"echo \"deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main\"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list",
     	"sudo apt update",
-    	"sudo apt install brave-browser"
+    	"sudo apt install brave-browser -y"
+    ],
+    "docker" : [
+        "sudo apt update",
+        "sudo apt install apt-transport-https ca-certificates curl software-properties-common",
+        "curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg",
+        "echo \"deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable\" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null",
+        "sudo apt update",
+        "apt-cache policy docker-ce",
+        "sudo apt install docker-ce -y",
+        "sudo systemctl status docker"
+    ],
+    "mysql" : [
+        "ALTER USER 'sammy'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';"
     ]
+
 }
